@@ -1,7 +1,5 @@
 # DeScribeIt - A CRUD Blogging Platform
 
-![DeScribeIt Logo](https://via.placeholder.com/150)
-
 Welcome to DeScribeIt, a full-stack blogging platform that allows users to create, read, update, and delete blog posts. The platform includes user authentication with JWT, allowing for secure login and signup processes.
 
 Hosted at: [DeScribeIt](https://describeit.netlify.app/)
@@ -46,3 +44,53 @@ Hosted at: [DeScribeIt](https://describeit.netlify.app/)
    ```bash
    git clone https://github.com/balani491/DeScribeIt.git
    cd DeScribeIt
+2. **Install Dependencies:**
+    - Navigate to the frontend and install dependencies:
+        ```sh
+        cd frontend
+        npm install
+        ```
+    - Navigate to the backend and install dependencies:
+        ```sh
+        cd backend
+        npm install
+        ```
+
+3. **Environment Variables:**
+    - Create a `.env` file in the backend directory and configure your MongoDB URI, JWT secret, and other necessary environment variables.
+	 Example `.env` file:
+	```sh
+	PORT1=3000
+    DATABASE_URL={YOUR_MONGO_DB_CONNECTION_STRING}
+    JWT_SECRET = {YOUR_JWT_SECRET}
+
+	```
+
+4. **Run the Application:**
+    - Start the backend server:
+        ```sh
+        cd backend
+        tsc -b
+        node src/index.js
+        ```
+    - Start the frontend development server:
+        ```sh
+        cd frontend
+        npm run dev
+        ```
+
+   ## Usage
+
+   1. **Access the Website**: Visit [DeScribeIt](https://describeit.netlify.app/).
+      
+   2. **Create a New Description**:
+      - Click on the "New Description" button.
+      - Fill in the required details for your content description.
+
+   3. **Save and Preview**:
+      - Save your description to see a real-time preview.
+      
+   4. **Export or Share**:
+      - Export the description or share it using the provided options.
+
+
